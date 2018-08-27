@@ -24,5 +24,10 @@ namespace WPF_Relaunch
         {
             InitializeComponent();
         }
+
+        private void SCUT_Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("hello world");
+        }
     }
 }
