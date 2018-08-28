@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WPF_Relaunch"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button Content="Click me" Height="50" Width="50" Click="SCUT_Button_Click"></Button>
+    <Grid>      
+        <local:UserLogin></local:UserLogin>
+        <Button Content="Click me" Height="50" Width="50" Click="SCUT_Button_Click" Grid.Column="1" Margin="197.333,135,234.667,135.667"></Button>
     </Grid>
 </Window>
