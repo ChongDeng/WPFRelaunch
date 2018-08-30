@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
 
-    <Grid >
+    <WrapPanel Orientation="Horizontal" VerticalAlignment="Top" Width="200">
+        <Button>1</Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <Button>4</Button>
+    </WrapPanel>
+    
+    <!--<Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="100"></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -20,7 +27,7 @@
         <Button Grid.Column="1" Grid.Row="0">2</Button>
         <Button Grid.Column="0" Grid.Row="1">3</Button>
         <Button Grid.Column="1" Grid.Row="1">4</Button>
-    </Grid>
+    </Grid>-->
 
     <!--<Grid>
         <WrapPanel>
