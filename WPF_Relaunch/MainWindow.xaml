@@ -7,12 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
 
-    <WrapPanel Orientation="Horizontal" VerticalAlignment="Top" Width="200">
+    <DockPanel LastChildFill="False">
         <Button>1</Button>
         <Button>2</Button>
         <Button>3</Button>
         <Button>4</Button>
-    </WrapPanel>
+        <Button>5</Button>
+    </DockPanel>
+    
+    <!--<WrapPanel Orientation="Horizontal" VerticalAlignment="Top" Width="200">
+        <Button>1</Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <Button>4</Button>
+    </WrapPanel>-->
     
     <!--<Grid >
         <Grid.RowDefinitions>
