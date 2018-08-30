@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
 
-    <DockPanel LastChildFill="False">
+    <DockPanel LastChildFill="True">
         <Button DockPanel.Dock="Top">1</Button>
         <Button>2</Button>
         <Button DockPanel.Dock="Bottom">3</Button>
-        <Button DockPanel.Dock="Right">4</Button>        
+        <Button DockPanel.Dock="Right">4</Button>
+        <Button>5</Button>
     </DockPanel>
     
     <!--<WrapPanel Orientation="Horizontal" VerticalAlignment="Top" Width="200">
