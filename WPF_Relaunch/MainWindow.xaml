@@ -11,12 +11,16 @@
         <Button Content="Click me" Height="50" Width="50" Click="SCUT_Button_Click" Grid.Column="1" Margin="197.333,135,234.667,135.667"></Button>
     </Grid>-->
     <StackPanel>
-        <TextBlock Text="WPF textblock" FontFamily="宋体" 
+        <!--<TextBlock Text="WPF textblock" FontFamily="宋体" 
                    FontSize="32" Foreground="red"
                    TextWrapping="Wrap" TextAlignment="Center">            
-        </TextBlock>
+        </TextBlock>-->
         <!--<local:MyTextBox></local:MyTextBox>
         <local:MyPasswordBox></local:MyPasswordBox>-->
-        <local:MyRichTextBox></local:MyRichTextBox>
+        <!--<local:MyRichTextBox></local:MyRichTextBox>-->
+        <Button Content="Normal Button" Height="20" Width="100"
+                    Click="Button_Click"></Button>
+        <Button Height="20" Width="100">Normal Button</Button>
+        <RepeatButton Delay="2000" Interval="1000" Click="RepeatButton_Click">RepeatButton</RepeatButton>
     </StackPanel>
 </Window>

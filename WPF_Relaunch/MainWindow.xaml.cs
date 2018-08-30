@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -28,6 +29,19 @@ namespace WPF_Relaunch
         private void SCUT_Button_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("hello world");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Update Data Success!");
+        }
+
+        int count = 0;
+        private void RepeatButton_Click(object sender, RoutedEventArgs e)
+        {
+            count++;
+            var repeatBtn = (RepeatButton)sender;
+            repeatBtn.Content = string.Format("RepeatButton{0}", count);
         }
     }
 }
