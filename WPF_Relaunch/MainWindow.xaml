@@ -15,7 +15,8 @@
                    FontSize="32" Foreground="red"
                    TextWrapping="Wrap" TextAlignment="Center">            
         </TextBlock>
-        <local:MyTextBox></local:MyTextBox>
-        <local:MyPasswordBox></local:MyPasswordBox>
+        <!--<local:MyTextBox></local:MyTextBox>
+        <local:MyPasswordBox></local:MyPasswordBox>-->
+        <local:MyRichTextBox></local:MyRichTextBox>
     </StackPanel>
 </Window>

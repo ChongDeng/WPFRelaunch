@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="WPF_Relaunch.MyRichTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Relaunch"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <RichTextBox Height="300" Margin="10">
+            <FlowDocument>
+                <Paragraph>
+                    <Run>北方的春晨，依旧寒凉，紧紧地把体温拽在手心，阡陌荒凉，静默无声，我开始情不自禁幻想南国风情，应是花草丛丛，细雨蒙蒙。伞花美丽了巷陌，青阶，谁撑一把素洁的白伞，痴目远眺，一怀温情。而我的江北终究无法飞越你的江南，冷寒，笼袖。</Run>
+                </Paragraph>
+                <BlockUIContainer>
+                    <Image Source="qq.jpg"></Image>
+                </BlockUIContainer>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</UserControl>
