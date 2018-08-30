@@ -43,5 +43,11 @@ namespace WPF_Relaunch
             var repeatBtn = (RepeatButton)sender;
             repeatBtn.Content = string.Format("RepeatButton{0}", count);
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var mi = (MenuItem)sender;
+            MessageBox.Show(mi.Header.ToString());
+        }
     }
 }

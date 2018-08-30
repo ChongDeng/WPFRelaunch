@@ -6,21 +6,39 @@
         xmlns:local="clr-namespace:WPF_Relaunch"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <WrapPanel>
+            <Menu IsMainMenu="True">
+                <MenuItem Header="文件(_F)"  IsEnabled="True" ToolTip="文件相关的操作">
+                    <MenuItem Header="新建(_N)" Click="MenuItem_Click"></MenuItem>
+                    <MenuItem Header="打开(_O)"></MenuItem>
+                    <Separator></Separator>
+                    <MenuItem Header="添加(_D)"></MenuItem>
+                    <Separator></Separator>
+                    <MenuItem Header="关闭(_C)"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="编辑(_E)" IsCheckable="True"></MenuItem>
+                <MenuItem Header="视图(_V)"></MenuItem>
+                <MenuItem Header="项目(_P)"></MenuItem>
+            </Menu>           
+        </WrapPanel>
+    </Grid>
+
     <!--<Grid>      
         <local:UserLogin></local:UserLogin>
         <Button Content="Click me" Height="50" Width="50" Click="SCUT_Button_Click" Grid.Column="1" Margin="197.333,135,234.667,135.667"></Button>
     </Grid>-->
-    <StackPanel>
-        <!--<TextBlock Text="WPF textblock" FontFamily="宋体" 
+    <!--<StackPanel>
+        --><!--<TextBlock Text="WPF textblock" FontFamily="宋体" 
                    FontSize="32" Foreground="red"
                    TextWrapping="Wrap" TextAlignment="Center">            
         </TextBlock>-->
         <!--<local:MyTextBox></local:MyTextBox>
         <local:MyPasswordBox></local:MyPasswordBox>-->
-        <!--<local:MyRichTextBox></local:MyRichTextBox>-->
+        <!--<local:MyRichTextBox></local:MyRichTextBox>--><!--
         <Button Content="Normal Button" Height="20" Width="100"
                     Click="Button_Click"></Button>
         <Button Height="20" Width="100">Normal Button</Button>
         <RepeatButton Delay="2000" Interval="1000" Click="RepeatButton_Click">RepeatButton</RepeatButton>
-    </StackPanel>
+    </StackPanel>-->
 </Window>
