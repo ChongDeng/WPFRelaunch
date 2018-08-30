@@ -17,10 +17,19 @@
                     <Separator></Separator>
                     <MenuItem Header="关闭(_C)"></MenuItem>
                 </MenuItem>
-                <MenuItem Header="编辑(_E)" IsCheckable="True"></MenuItem>
-                <MenuItem Header="视图(_V)"></MenuItem>
-                <MenuItem Header="项目(_P)"></MenuItem>
-            </Menu>           
+                <MenuItem Header="编辑(_E)" IsCheckable="True">
+                    <MenuItem Header="MenuItem1"></MenuItem>
+                    <MenuItem Header="MenuItem2"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="视图(_V)">
+                    <MenuItem Header="MenuItem3"></MenuItem>
+                    <MenuItem Header="MenuItem4"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="项目(_P)">
+                    <MenuItem Header="MenuItem5"></MenuItem>
+                    <MenuItem Header="MenuItem6"></MenuItem>
+                </MenuItem>
+            </Menu>   
         </WrapPanel>
     </Grid>
 
