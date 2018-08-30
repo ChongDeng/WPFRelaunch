@@ -16,5 +16,6 @@
                    TextWrapping="Wrap" TextAlignment="Center">            
         </TextBlock>
         <local:MyTextBox></local:MyTextBox>
+        <local:MyPasswordBox></local:MyPasswordBox>
     </StackPanel>
 </Window>
