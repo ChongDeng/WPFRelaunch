@@ -25,11 +25,24 @@
                     <MenuItem Header="MenuItem3"></MenuItem>
                     <MenuItem Header="MenuItem4"></MenuItem>
                 </MenuItem>
-                <MenuItem Header="项目(_P)">
+                <MenuItem Header="项目(_P)" IsEnabled="False">
                     <MenuItem Header="MenuItem5"></MenuItem>
                     <MenuItem Header="MenuItem6"></MenuItem>
                 </MenuItem>
-            </Menu>   
+            </Menu>
+            <WrapPanel.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="右键菜单1">
+                        <MenuItem Header="子菜单1"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="右键菜单2">
+                        <MenuItem Header="子菜单1"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="右键菜单3">
+                        <MenuItem Header="子菜单1"></MenuItem>
+                    </MenuItem>
+                </ContextMenu>
+            </WrapPanel.ContextMenu>
         </WrapPanel>
     </Grid>
 
