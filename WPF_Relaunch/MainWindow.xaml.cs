@@ -22,7 +22,7 @@ namespace WPF_Relaunch
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void SCUT_Button_Click(object sender, RoutedEventArgs e)
