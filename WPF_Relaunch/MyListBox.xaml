@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="WPF_Relaunch.MyListBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Relaunch"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <DockPanel>
+            <TextBlock DockPanel.Dock="Top">学生列表：</TextBlock>
+            <ListBox Height="284" VerticalAlignment="Bottom">
+                <ListBoxItem>
+                    <TextBlock>张三</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>李四</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>王五</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>赵六</TextBlock>
+                </ListBoxItem>
+            </ListBox>
+        </DockPanel>
+    </Grid>
+</UserControl>

@@ -6,9 +6,14 @@
         xmlns:local="clr-namespace:WPF_Relaunch"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+
     <Grid>
-        <local:MyComboBox></local:MyComboBox>
+        <local:MyListBox></local:MyListBox>
     </Grid>
+    
+    <!--<Grid>
+        <local:MyComboBox></local:MyComboBox>
+    </Grid>-->
     <!--<UniformGrid Rows="3" Columns="2">
         <Button>1</Button>
         <Button>2</Button>

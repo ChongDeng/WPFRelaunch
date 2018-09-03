@@ -58,6 +58,9 @@
     <Compile Include="MyComboBox.xaml.cs">
       <DependentUpon>MyComboBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyListBox.xaml.cs">
+      <DependentUpon>MyListBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MyPasswordBox.xaml.cs">
       <DependentUpon>MyPasswordBox.xaml</DependentUpon>
     </Compile>
@@ -84,6 +87,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MyComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyListBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
