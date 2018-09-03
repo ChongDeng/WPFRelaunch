@@ -20,9 +20,24 @@ namespace WPF_Relaunch
     /// </summary>
     public partial class MyListBox : UserControl
     {
+        public List<Student> StudentList { get; set; }
+
         public MyListBox()
         {
             InitializeComponent();
+
+            this.StudentList = Student.GetStudents();
+            this.DataContext = this;
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var listBox = (ListBox)sender;
+            var selectedItem = listBox.SelectedItem as Student;
+            var selectedItems = listBox.SelectedItems;
+
+            MessageBox.Show(string.Format("selectedItem={0}",
+                selectedItem.Name));
         }
     }
 }

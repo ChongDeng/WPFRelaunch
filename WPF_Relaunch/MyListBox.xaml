@@ -9,7 +9,12 @@
     <Grid>
         <DockPanel>
             <TextBlock DockPanel.Dock="Top">学生列表：</TextBlock>
-            <ListBox Height="284" VerticalAlignment="Bottom">
+            <ListBox ItemsSource="{Binding StudentList}" 
+                     DisplayMemberPath="Name"
+                     SelectionMode="Extended" 
+                     SelectionChanged="ListBox_SelectionChanged">               
+            </ListBox>
+            <!--<ListBox Height="284" VerticalAlignment="Bottom">
                 <ListBoxItem>
                     <TextBlock>张三</TextBlock>
                 </ListBoxItem>
@@ -22,7 +27,7 @@
                 <ListBoxItem>
                     <TextBlock>赵六</TextBlock>
                 </ListBoxItem>
-            </ListBox>
+            </ListBox>-->
         </DockPanel>
     </Grid>
 </UserControl>
