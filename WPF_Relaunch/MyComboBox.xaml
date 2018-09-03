@@ -9,8 +9,12 @@
     <Grid>
         <StackPanel>
             <TextBlock>学生列表:</TextBlock>
-            <ComboBox SelectedIndex="2">
-                <ComboBoxItem>
+            <ComboBox SelectedIndex="2" SelectionChanged="ComboBox_SelectionChanged"
+                      ItemsSource="{Binding StudentList}"
+                      DisplayMemberPath="Name"
+                      SelectedValuePath="Name"
+                      >
+                <!--<ComboBoxItem>
                     <TextBlock>张三</TextBlock>
                 </ComboBoxItem>
                 <ComboBoxItem>
@@ -21,7 +25,7 @@
                 </ComboBoxItem>
                 <ComboBoxItem>
                     <TextBlock>赵六</TextBlock>
-                </ComboBoxItem>
+                </ComboBoxItem>-->
             </ComboBox>
         </StackPanel>
     </Grid>
