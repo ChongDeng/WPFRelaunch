@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel>
             <TextBlock>学生列表:</TextBlock>
-            <ComboBox>
+            <ComboBox SelectedIndex="2">
                 <ComboBoxItem>
                     <TextBlock>张三</TextBlock>
                 </ComboBoxItem>
