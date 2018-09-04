@@ -9,7 +9,19 @@
     <Grid>
         <DockPanel>            
             <TextBlock DockPanel.Dock="Top">学生列表：</TextBlock>
-            <ListView>                
+
+            <ListView Name="listView" ItemsSource="{Binding StudentList}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="姓名" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="年龄" DisplayMemberBinding="{Binding Age}"/>
+                        <GridViewColumn Header="性别" DisplayMemberBinding="{Binding Sex}"/>
+                        <GridViewColumn Header="地址" DisplayMemberBinding="{Binding Address}"/>
+                    </GridView>
+                </ListView.View>               
+            </ListView>
+
+            <!--<ListView>                
                 <ListViewItem>
                     <TextBlock>张三</TextBlock>
                 </ListViewItem>
@@ -22,7 +34,7 @@
                 <ListViewItem>
                     <TextBlock>赵六</TextBlock>
                 </ListViewItem>
-            </ListView>
+            </ListView>-->
         </DockPanel>
     </Grid>
 </UserControl>

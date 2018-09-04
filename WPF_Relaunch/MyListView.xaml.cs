@@ -20,9 +20,14 @@ namespace WPF_Relaunch
     /// </summary>
     public partial class MyListView : UserControl
     {
+        public List<Student> StudentList { get; set; }
+
         public MyListView()
         {
             InitializeComponent();
+
+            this.StudentList = Student.GetStudents();
+            this.DataContext = this;
         }
     }
 }
