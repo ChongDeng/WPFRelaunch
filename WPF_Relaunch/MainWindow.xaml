@@ -8,8 +8,12 @@
         Title="MainWindow" Height="350" Width="525">
 
     <Grid>
-        <local:MyListView></local:MyListView>
+        <local:MyTabControl></local:MyTabControl>
     </Grid>
+    
+    <!--<Grid>
+        <local:MyListView></local:MyListView>
+    </Grid>-->
     
     <!--<Grid>
         <local:MyListBox></local:MyListBox>
