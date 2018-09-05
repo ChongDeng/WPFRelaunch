@@ -7,19 +7,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <TreeView>
-            <TreeViewItem Header="父级节点1" IsExpanded="False"
+        <TreeView ItemsSource="{Binding StudentList}" SelectedItemChanged="TreeView_SelectedItemChanged">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding Name}"></TextBlock>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+            <!--<TreeViewItem Header="父级节点" IsExpanded="False"
                           Expanded="TreeViewItem_Expanded"
                           Collapsed="TreeViewItem_Collapsed"
                           Selected="TreeViewItem_Selected"
                           Unselected="TreeViewItem_Unselected">
                 <TreeViewItem Header="子节点1" IsSelected="False"></TreeViewItem>
-                <TreeViewItem Header="子节点2"></TreeViewItem>               
-            </TreeViewItem>
-            <TreeViewItem Header="父级节点1" IsExpanded="True">
-                <TreeViewItem Header="子节点3" IsSelected="False"></TreeViewItem>
-                <TreeViewItem Header="子节点4"></TreeViewItem>
-            </TreeViewItem>
+                <TreeViewItem Header="子节点2"></TreeViewItem>
+                <TreeViewItem Header="子节点3"></TreeViewItem>
+            </TreeViewItem>-->
         </TreeView>
     </Grid>
 </UserControl>

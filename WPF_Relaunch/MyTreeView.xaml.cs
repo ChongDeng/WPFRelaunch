@@ -20,9 +20,14 @@ namespace WPF_Relaunch
     /// </summary>
     public partial class MyTreeView : UserControl
     {
+        public List<Student> StudentList { get; set; }
+
         public MyTreeView()
         {
             InitializeComponent();
+
+            this.StudentList = Student.GetStudents();
+            this.DataContext = this;
         }
 
         private void TreeView_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
