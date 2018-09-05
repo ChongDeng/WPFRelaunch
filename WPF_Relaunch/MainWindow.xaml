@@ -8,8 +8,12 @@
         Title="MainWindow" Height="350" Width="525">
 
     <Grid>
-        <local:MyTreeView></local:MyTreeView>
+        <local:MyStatusBar></local:MyStatusBar>
     </Grid>
+    
+    <!--<Grid>
+        <local:MyTreeView></local:MyTreeView>
+    </Grid>-->
     
     <!--<Grid>
         <local:MyDataGrid></local:MyDataGrid>

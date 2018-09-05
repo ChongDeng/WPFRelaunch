@@ -73,6 +73,9 @@
     <Compile Include="MyRichTextBox.xaml.cs">
       <DependentUpon>MyRichTextBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyStatusBar.xaml.cs">
+      <DependentUpon>MyStatusBar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MyTabControl.xaml.cs">
       <DependentUpon>MyTabControl.xaml</DependentUpon>
     </Compile>
@@ -119,6 +122,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MyRichTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyStatusBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
