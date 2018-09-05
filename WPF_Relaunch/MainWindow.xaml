@@ -8,8 +8,12 @@
         Title="MainWindow" Height="350" Width="525">
 
     <Grid>
-        <local:MyDataGrid></local:MyDataGrid>
+        <local:MyTreeView></local:MyTreeView>
     </Grid>
+    
+    <!--<Grid>
+        <local:MyDataGrid></local:MyDataGrid>
+    </Grid>-->
     
     <!--<Grid>
         <local:MyTabControl></local:MyTabControl>
